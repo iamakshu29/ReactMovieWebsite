@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import reportWebVitals from "./reportWebVitals";
 import { AppProvider } from "./context";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -17,7 +16,10 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+/* we understand how the context hook works but in this project we made it in another folder name
+context.js thats why this one is bit different
+first we createContext() in context.js and then make a provider AppProvider func
+AppProvider needs to wrapped around all element to make it work normally so, we wrapped it in index.js 
+
+
+*/

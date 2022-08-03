@@ -1,11 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+
+// import {useContext} from "react";
+// import { AppContext } from "./context";
+    //OR
 import { useGlobalContext } from "./context";
 
 const imgUrl = "https://via.placeholder.com/200/200";
 
 const Movies = () => {
-  const { movie, isLoading } = useGlobalContext();
+  // const { movie, isLoading } = useContext(AppContext);
+      //OR
+      const { movie, isLoading } = useGlobalContext();
+
   if (isLoading) {
     return <div className="loading">Loading....</div>;
   }
